@@ -1,0 +1,134 @@
+:root {
+    --primary: #2563eb;
+    --primary-hover: #1e40af;
+    --bg-main: #f4f6fb;
+    --bg-card: #ffffff;
+    --text-main: #0f172a;
+    --text-muted: #64748b;
+    --success-bg: #dcfce7;
+    --success-icon: #22c55e;
+    --border-color: #e2e8f0;
+    --radius-card: 16px;
+    --radius-sm: 8px;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-main);
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    color: var(--text-main);
+}
+
+.success-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    margin-left: 330px;
+}
+
+.page-badge {
+    display: inline-block;
+    background-color: #dbeafe;
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0 0 24px 0;
+}
+
+
+.success-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-card);
+    padding: 64px 32px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.success-icon-circle {
+    width: 72px;
+    height: 72px;
+    background-color: var(--success-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.success-icon-circle svg {
+    width: 36px;
+    height: 36px;
+    color: var(--success-icon);
+}
+
+.success-headline {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0 0 12px 0;
+}
+
+.order-number {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 16px;
+}
+
+.success-description {
+    font-size: 14px;
+    color: var(--text-muted);
+    max-width: 520px;
+    margin: 0 0 32px 0;
+    line-height: 1.5;
+}
+
+
+.actions-group {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-secondary {
+    background-color: white;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    padding: 10px 24px;
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: #eff6ff;
+}

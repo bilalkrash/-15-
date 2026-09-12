@@ -1,0 +1,214 @@
+:root {
+    --primary: #2563eb;
+    --primary-hover: #1e40af;
+    --bg-main: #f4f6fb;
+    --bg-card: #ffffff;
+    --text-main: #0f172a;
+    --text-muted: #64748b;
+    --danger: #ef4444;
+    --border-color: #e2e8f0;
+    --radius-card: 16px;
+    --radius-sm: 8px;
+
+
+    --badge-new-bg: #dbeafe;
+    --badge-new-text: #2563eb;
+    --badge-processing-bg: #fef3c7;
+    --badge-processing-text: #d97706;
+    --badge-delivered-bg: #dcfce7;
+    --badge-delivered-text: #16a34a;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-main);
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    color: var(--text-main);
+}
+
+.profile-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    margin-left: 330px;
+}
+
+.page-badge {
+    display: inline-block;
+    background-color: #dbeafe;
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0 0 4px 0;
+}
+
+.page-subtitle {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin: 0 0 24px 0;
+}
+
+.profile-main-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-card);
+    padding: 32px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    display: flex;
+    gap: 32px;
+    align-items: start;
+}
+
+/* Боковая панель профиля */
+.profile-sidebar {
+    width: 240px;
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-card);
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.avatar-circle {
+    width: 72px;
+    height: 72px;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.user-name {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 0 0 4px 0;
+    text-align: center;
+}
+
+.user-email {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.sidebar-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border: none;
+    background: transparent;
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-main);
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s;
+    box-sizing: border-box;
+}
+
+.menu-item.active {
+    background-color: var(--primary);
+    color: white;
+}
+
+.menu-item.logout {
+    color: var(--danger);
+}
+
+.menu-item.logout:hover {
+    background-color: #fef2f2;
+}
+
+.orders-content {
+    flex: 1;
+}
+
+.section-heading {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0 0 20px 0;
+}
+
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.order-item-card {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-card);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.order-info-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.order-number {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.order-meta-details {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+
+.status-badge {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 16px;
+    display: inline-block;
+}
+
+.status-badge.new {
+    background-color: var(--badge-new-bg);
+    color: var(--badge-new-text);
+}
+
+.status-badge.processing {
+    background-color: var(--badge-processing-bg);
+    color: var(--badge-processing-text);
+}
+
+.status-badge.delivered {
+    background-color: var(--badge-delivered-bg);
+    color: var(--badge-delivered-text);
+}
